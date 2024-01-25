@@ -1,0 +1,87 @@
+body {
+  background-color: #E9DCBE;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input {
+  width: 684px;
+  height: 70px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 45px;
+  border: #8E8B82 solid 2px;
+  background-color: #F3F3F3;
+}
+
+#keyboardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 684px;
+  gap: 5px;
+  margin: 100px auto;
+}
+
+.layer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.key {
+  background-color: #343434;
+  color: #F3F3F3;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.key:hover {
+  background-color: #1A1A1A;
+}
+
+.key-normal {
+  width: 50px;
+  height: 70px;
+}
+
+.key-mayus {
+  width: 120px;
+  height: 70px;
+}
+
+.key-shift {
+  width: 80px;
+  height: 70px;
+}
+
+.key-space {
+  width: 400px;
+  height: 70px;
+}
+
+.key-empty {
+  width: 25px;
+  height: 70px;
+  background: transparent;
+  color: #F1F1F1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activated {
+  background: #3e0f0f;
+}
